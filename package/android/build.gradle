@@ -1,0 +1,24 @@
+group 'com.redhun.my_stt_recorder'
+version '0.1.0'
+
+buildscript {
+    repositories { google(); mavenCentral() }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.7.3'
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    namespace 'com.redhun.my_stt_recorder'
+    compileSdk 35
+    defaultConfig { minSdk 33 }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions { jvmTarget = '17' }
+    sourceSets { main.java.srcDirs += 'src/main/kotlin' }
+}
+repositories { google(); mavenCentral() }

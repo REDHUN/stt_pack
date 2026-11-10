@@ -1,0 +1,15 @@
+name: my_stt_recorder_example
+description: Provider demo for the my_stt_recorder plugin.
+version: 1.0.0+1
+publish_to: none
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: '>=3.44.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2
+  my_stt_recorder:
+    path: ../my_stt_recorder_starter/my_stt_recorder
+flutter:
+  uses-material-design: true

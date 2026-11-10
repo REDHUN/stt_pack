@@ -1,0 +1,11 @@
+.dart_tool/
+.flutter-plugins*
+.pub-cache/
+build/
+example/android/
+example/.dart_tool/
+example/build/
+*.iml
+local.properties
+.wav-check/
+__pycache__/
